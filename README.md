@@ -1,303 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maduemezia Ikechukwu David - Frontend Developer</title>
-    <style>
-        :root {
-            --primary-color: #4a6fa5;
-            --secondary-color: #6b8cae;
-            --accent-color: #5d7592;
-            --text-color: #333;
-            --light-bg: #f8f9fa;
-            --dark-bg: #343a40;
-            --transition: all 0.3s ease;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--light-bg);
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        header {
-            text-align: center;
-            padding: 2rem 0;
-            margin-bottom: 2rem;
-            border-bottom: 1px solid #eaeaea;
-        }
-        
-        h1 {
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
-        }
-        
-        h2 {
-            color: var(--secondary-color);
-            margin: 1.5rem 0 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--accent-color);
-        }
-        
-        h3 {
-            color: var(--accent-color);
-            margin: 1rem 0 0.5rem;
-        }
-        
-        .tagline {
-            font-size: 1.2rem;
-            color: var(--secondary-color);
-            margin-bottom: 1rem;
-        }
-        
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin: 1rem 0;
-        }
-        
-        .social-links a {
-            color: var(--primary-color);
-            text-decoration: none;
-            transition: var(--transition);
-        }
-        
-        .social-links a:hover {
-            color: var(--accent-color);
-            text-decoration: underline;
-        }
-        
-        section {
-            margin-bottom: 2.5rem;
-        }
-        
-        .about, .skills, .projects, .goals, .contact {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-        
-        .skill-category {
-            background: var(--light-bg);
-            padding: 1rem;
-            border-radius: 6px;
-        }
-        
-        .skill-category h4 {
-            margin-bottom: 0.5rem;
-            color: var(--primary-color);
-        }
-        
-        .skill-list {
-            list-style-type: none;
-        }
-        
-        .skill-list li {
-            padding: 0.2rem 0;
-        }
-        
-        .skill-list li::before {
-            content: "▹ ";
-            color: var(--accent-color);
-        }
-        
-        .project {
-            margin-bottom: 1.5rem;
-            padding-bottom: 1.5rem;
-            border-bottom: 1px solid #eaeaea;
-        }
-        
-        .project:last-child {
-            border-bottom: none;
-        }
-        
-        .project-links {
-            display: flex;
-            gap: 1rem;
-            margin-top: 0.5rem;
-        }
-        
-        .project-links a {
-            color: var(--primary-color);
-            text-decoration: none;
-            transition: var(--transition);
-        }
-        
-        .project-links a:hover {
-            color: var(--accent-color);
-            text-decoration: underline;
-        }
-        
-        .goals-list {
-            list-style-type: none;
-        }
-        
-        .goals-list li {
-            margin-bottom: 0.8rem;
-            padding-left: 1.5rem;
-            position: relative;
-        }
-        
-        .goals-list li::before {
-            content: "🎯";
-            position: absolute;
-            left: 0;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 2rem 0;
-            margin-top: 2rem;
-            border-top: 1px solid #eaeaea;
-            color: var(--secondary-color);
-        }
-        
-        @media (max-width: 768px) {
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Maduemezia Ikechukwu David</h1>
-        <p class="tagline">ALX Frontend Program Learner | Mental Health App Developer</p>
-        <div class="social-links">
-            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> •
-            <a href="https://twitter.com/Oracle_Nexora" target="_blank">Twitter</a> •
-            <a href="mailto:ikechukwudavid331@gmail.com">Email</a>
-        </div>
-    </header>
+# 👋 Hello, I'm [Maduemezia Ikechukwu David]
 
-    <main>
-        <section class="about">
-            <h2>👋 About Me</h2>
-            <p>Hello! I'm a frontend developer passionate about building solid, established web applications that make a real difference. My journey into software engineering was inspired by the potential of technology to solve real-world problems, particularly in the mental health space.</p>
-            <p>I'm currently enhancing my skills through the ALX Frontend Program, with a specific focus on creating mental healthcare web applications that address the needs of young Africans. I believe in the power of clean, accessible, and user-centered design to create impactful digital experiences.</p>
-        </section>
+**ALX Frontend Program Learner | Mental Health Desktop/ App Developer | Open Source Contributor**
 
-        <section class="skills">
-            <h2>🛠️ Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>Frontend Development</h4>
-                    <ul class="skill-list">
-                        <li>HTML5 & CSS3</li>
-                        <li>JavaScript (ES6+)</li>
-                        <li>React.js</li>
-                        <li>Responsive Design</li>
-                        <li>CSS Preprocessors (SASS)</li>
-                    </ul>
-                </div>
-                
-                <div class="skill-category">
-                    <h4>Tools & Practices</h4>
-                    <ul class="skill-list">
-                        <li>Git & GitHub</li>
-                        <li>Webpack</li>
-                        <li>RESTful APIs</li>
-                        <li>UI/UX Principles</li>
-                        <li>Agile Methodology</li>
-                    </ul>
-                </div>
-                
-                <div class="skill-category">
-                    <h4>Learning Next</h4>
-                    <ul class="skill-list">
-                        <li>TypeScript</li>
-                        <li>Next.js</li>
-                        <li>Testing (Jest, Cypress)</li>
-                        <li>Progressive Web Apps</li>
-                        <li>Accessibility Standards</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+---
 
-        <section class="projects">
-            <h2>💼 Projects</h2>
-            
-            <div class="project">
-                <h3>MindfulAfrica - Mental Health Platform</h3>
-                <p>A web application designed to provide mental health resources and support for young Africans. Features include self-assessment tools, resource library, and community forum.</p>
-                <div class="project-links">
-                    <a href="https://github.com/yourusername/mindfulafrica" target="_blank">View Code</a>
-                    <a href="https://yourusername.github.io/mindfulafrica" target="_blank">Live Demo</a>
-                </div>
-            </div>
-            
-            <div class="project">
-                <h3>WellnessTracker</h3>
-                <p>A mood and wellness tracking application that helps users monitor their mental health journey with visualization tools and personalized insights.</p>
-                <div class="project-links">
-                    <a href="https://github.com/yourusername/wellnesstracker" target="_blank">View Code</a>
-                    <a href="https://yourusername.github.io/wellnesstracker" target="_blank">Live Demo</a>
-                </div>
-            </div>
-            
-            <div class="project">
-                <h3>CommunityConnect</h3>
-                <p>An open-source platform connecting mental health professionals with communities in need across Africa. (In development)</p>
-                <div class="project-links">
-                    <a href="https://github.com/yourusername/communityconnect" target="_blank">View Code</a>
-                    <a href="#">Coming Soon</a>
-                </div>
-            </div>
-        </section>
+## 🚀 About Me
 
-        <section class="goals">
-            <h2>🎯 Goals & Interests</h2>
-            <ul class="goals-list">
-                <li>Build accessible mental healthcare web applications for young Africans</li>
-                <li>Contribute to open-source projects focused on mental health technology</li>
-                <li>Develop MVP solutions that can be tested and implemented in real-world scenarios</li>
-                <li>Collaborate with healthcare professionals to create effective digital tools</li>
-                <li>Mentor other aspiring developers from Africa interested in health tech</li>
-            </ul>
-        </section>
+I'm a frontend developer passionate about building solid, established web applications that make a real difference. My journey into software engineering was inspired by the potential of technology to solve real-world problems, particularly in the mental health space.
 
-        <section class="contact">
-            <h2>📫 Let's Connect</h2>
-            <p>I'm always interested in connecting with fellow developers, mental health advocates, and potential collaborators. Feel free to reach out if you'd like to discuss:</p>
-            <ul>
-                <li>Open-source projects in the mental health space</li>
-                <li>Frontend development opportunities</li>
-                <li>Collaborations on African-focused tech solutions</li>
-                <li>Or just to chat about tech and mental health innovation!</li>
-            </ul>
-            <p>Email: <a href="mailto:ikechukwudavid331@gmail.com">ikechukwudavid331@.com</a></p>
-        </section>
-    </main>
+I'm currently enhancing my skills through the ALX Frontend Program, with a specific focus on creating mental healthcare web and desktop applications that address the needs of young Africans. I believe in the power of clean, accessible, and user-centered design to create impactful digital experiences.
 
-    <footer>
-        <p>Made with ❤️ for the mental health community</p>
-        <p>© 2025 Maduemezia Ikechukwu David. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+## 🛠️ Technical Skills
 
-<!---
-BlaQDeveloper/BlaQDeveloper is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+### Frontend Development
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Responsive Design](https://img.shields.io/badge/Responsive-Design-green?style=for-the-badge)
+
+### Tools & Practices
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+![Webpack](https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=webpack&logoColor=black)
+![RESTful APIs](https://img.shields.io/badge/RESTful-APIs-lightgrey?style=for-the-badge)
+
+### Currently Learning
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![Jest](https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white)
+
+## 💼 Projects
+
+### 🧠 MindfulAfrica - Mental Health Platform
+A web application designed to provide mental health resources and support for young Africans. Features include self-assessment tools, resource library, and community forum.
+
+**Tech Stack:** React, CSS3, JavaScript, Node.js
+
+[![View Code](https://img.shields.io/badge/GitHub-View_Code-blue?style=for-the-badge&logo=github)](https://github.com/yourusername/mindfulafrica)
+[![Live Demo](https://img.shields.io/badge/Vercel-Live_Demo-black?style=for-the-badge&logo=vercel)](https://yourusername.github.io/mindfulafrica)
+
+### 📊 WellnessTracker
+A mood and wellness tracking application that helps users monitor their mental health journey with visualization tools and personalized insights.
+
+**Tech Stack:** JavaScript, Chart.js, HTML5, CSS3
+
+[![View Code](https://img.shields.io/badge/GitHub-View_Code-blue?style=for-the-badge&logo=github)](https://github.com/yourusername/wellnesstracker)
+[![Live Demo](https://img.shields.io/badge/Vercel-Live_Demo-black?style=for-the-badge&logo=vercel)](https://yourusername.github.io/wellnesstracker)
+
+### 🤝 CommunityConnect (In Development)
+An open-source platform connecting mental health professionals with communities in need across Africa.
+
+**Tech Stack:** React, Firebase, Material UI
+
+[![View Code](https://img.shields.io/badge/GitHub-View_Code-blue?style=for-the-badge&logo=github)](https://github.com/yourusername/communityconnect)
+
+## 🎯 Goals & Interests
+
+- 🔭 **Building accessible mental healthcare web applications** for young Africans
+- 🌱 **Contributing to open-source projects** focused on mental health technology
+- 👯 **Collaborating with healthcare professionals** to create effective digital tools
+- 🤝 **Developing MVP solutions** that can be tested and implemented in real-world scenarios
+- 💬 **Mentoring other aspiring developers** from Africa interested in health tech
+
+## 📈 GitHub Stats
+
+![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=algolia)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&layout=compact&theme=algolia)
+
+## 📫 Let's Connect
+
+I'm always interested in connecting with fellow developers, mental health advocates, and potential collaborators. Feel free to reach out if you'd like to discuss:
+
+- Open-source projects in the mental health space
+- Frontend development opportunities
+- Collaborations on African-focused tech solutions
+- Or just to chat about tech and mental health innovation!
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/Oracle_Nexora)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ikechukwudavid331@gmail.com)
+
+---
+
+⭐️ From [Maduemezia Ikechukwu David](https://github.com/BlaQDeveloper)
