@@ -1,6 +1,6 @@
 # 👋 Hello, I'm [Maduemezia Ikechukwu David]
 
-**ALX Frontend Program Learner | Mental Health Desktop/ App Developer | Open Source Contributor**
+**ALX Frontend Program Learner | Mental Health Desktop/ App Developer | Open Source Contributor | Ethical Hacker**
 
 ---
 
